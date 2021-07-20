@@ -15,11 +15,38 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+
   background-color: var(--purple);
+  height: 30px;
+  color: var(--white);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  float: left;
+  padding-left: 3%;
+  padding-top: 1.5%;
+}
+
+.menu-link {
+  font-size: 0.62rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.login-btn {
+  color: var(--orange);
+  float: right;
 }
 
 main {
@@ -27,10 +54,22 @@ main {
 }
 
 section {
-  border: 5px var(--white) solid;
-  /* border-style: solid; */
-  /* border-color: #e8e8e8; */
-  /* border-width: 5px; */
+  height: 300px;
+  text-align: center;
+}
+
+.hero-section {
+  background-image: url(./img/bocacodeclass.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-color: var(--purple);
+  background-blend-mode: screen;
+}
+
+.about-section {
+  background-color: var(--white);
 }
 
 footer {
