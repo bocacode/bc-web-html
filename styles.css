@@ -47,6 +47,7 @@ li {
 .login-btn {
   color: var(--orange);
   float: right;
+  margin-right: 3%;
 }
 
 main {
@@ -59,6 +60,10 @@ section {
 }
 
 .hero-section {
+  display: flex; /* this makes the container flex */
+  justify-content: center; /* aligns to the main axis horizontal */
+  align-items: center; /* aligns to the cross axis vertical */
+
   background-image: url(./img/bocacodeclass.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -70,6 +75,19 @@ section {
 
 .about-section {
   background-color: var(--white);
+  padding: 5%;
+  height: 100%;
+}
+
+.about-section-group {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+article {
+  max-width: 300px;
+  margin-top: 30px;
 }
 
 footer {
